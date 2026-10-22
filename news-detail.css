@@ -1,0 +1,11 @@
+.article-shell{padding-top:54px;padding-bottom:84px;max-width:980px}
+.article-header{max-width:830px;margin:0 auto 34px;text-align:center}
+.article-header .eyebrow{color:#2f963f;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:800}
+.article-header h1{font:800 clamp(2.2rem,5vw,4.3rem)/1.02 Manrope,sans-serif;color:#063b63;margin:14px 0 20px}
+.article-summary{font-size:1.18rem;line-height:1.65;color:#526f83}
+.article-header time{display:inline-flex;margin-top:10px;padding:7px 13px;border-radius:999px;background:#eaf6ed;color:#237535;font-weight:700}
+.article-shell figure{margin:0 0 42px;border-radius:26px;overflow:hidden;box-shadow:0 20px 55px rgba(4,56,91,.15)}
+.article-shell figure img{display:block;width:100%;max-height:570px;object-fit:cover}
+.article-content{font-size:1.06rem;line-height:1.82;color:#24485f;max-width:820px;margin:auto}
+.article-content p{margin:0 0 1.25em}.article-content b,.article-content strong{color:#073e65}.article-content a{color:#0879bb;font-weight:700}.article-source{max-width:820px;margin:45px auto 0;padding:24px 28px;border:1px solid #cfe7d4;border-radius:18px;background:#f3fbf5}.article-source b{color:#1f7530;font-size:1.05rem}.article-source p{margin:6px 0 13px;color:#526f83}.article-source a,.article-back a{color:#086ca8;font-weight:800;text-decoration:none}.article-back{max-width:820px;margin:34px auto 0}.article-empty{text-align:center;padding:80px 0}.article-empty h1{color:#063b63}
+@media(max-width:700px){.article-shell{padding-top:32px}.article-header{text-align:left}.article-header h1{font-size:2.35rem}.article-summary{font-size:1rem}.article-shell figure{border-radius:17px}.article-content{font-size:1rem}}

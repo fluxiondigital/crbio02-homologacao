@@ -1,0 +1,10 @@
+body{overflow-x:hidden}
+.portal-brand-row>*,.info-grid,.news-grid,.link-grid,.search-layout,.info-card,.news-card,.links-panel,.result-list{min-width:0}
+.internal-hero h1,.internal-hero .lead,.section-title,.info-card h2,.info-card p,.link-grid a{overflow-wrap:anywhere}
+@media(max-width:640px){
+  .shell,.portal-brand-row{width:calc(100% - 28px)}
+  .internal-hero h1{max-width:100%;font-size:clamp(31px,9.5vw,38px)}
+  .section-title{font-size:27px}
+  .portal-menu{flex:0 0 auto}
+  .links-panel{width:100%}
+}

@@ -1,0 +1,30 @@
+.official-carousel.hero{height:clamp(320px,41.6667vw,800px);border-radius:0;background:#075a94;isolation:isolate}
+.official-carousel.hero::before{display:none}
+.official-track{position:absolute;inset:0}
+.official-slide{position:absolute;inset:0;display:block;opacity:0;visibility:hidden;transition:opacity .65s ease;z-index:0;background:#075a94}
+.official-slide.active{opacity:1;visibility:visible;z-index:1}
+.official-slide img{width:100%;height:100%;object-fit:cover;object-position:center}
+.official-slide-caption{display:none}
+.carousel-arrow,.carousel-pause{position:absolute;z-index:6;border:1px solid rgba(255,255,255,.5);background:rgba(0,49,81,.62);backdrop-filter:blur(8px);color:#fff;cursor:pointer;box-shadow:0 8px 22px rgba(0,29,48,.18)}
+.carousel-arrow{top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;font:500 34px/1 Inter}
+.carousel-arrow.previous{left:24px}.carousel-arrow.next{right:24px}
+.carousel-arrow:hover,.carousel-arrow:focus-visible,.carousel-pause:hover,.carousel-pause:focus-visible{background:#006da9}
+.official-carousel .hero-dots{bottom:22px;padding:9px 12px;border-radius:999px;background:rgba(0,40,66,.5);backdrop-filter:blur(8px)}
+.official-carousel .hero-dots button{width:23px;height:4px;background:rgba(255,255,255,.55);border-radius:5px;cursor:pointer}
+.official-carousel .hero-dots button.active{background:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.3)}
+.carousel-pause{right:24px;bottom:19px;width:38px;height:34px;border-radius:9px;font-weight:800}
+.official-carousel:focus-within .official-slide.active{outline:0}
+.official-carousel+.quick-access{margin-top:20px}
+@media(prefers-reduced-motion:reduce){.official-slide{transition:none}}
+@media(max-width:760px){
+  .official-carousel.hero{height:56vw;min-height:225px;max-height:340px;border-radius:0 0 22px 22px}
+  .official-slide{display:block;background:#075a94}
+  .official-slide img{width:100%;height:100%;object-fit:cover;object-position:left center;background:#075a94}
+  .official-slide-caption{display:none}
+  .carousel-arrow{top:50%;width:36px;height:36px;font-size:27px}.carousel-arrow.previous{left:8px}.carousel-arrow.next{right:8px}
+  .official-carousel .hero-dots{bottom:12px;left:14px;transform:none;gap:5px;padding:7px 8px}
+  .official-carousel .hero-dots button{width:18px;height:3px}
+  .carousel-pause{right:12px;bottom:9px;width:34px;height:31px}
+  .official-carousel+.quick-access{margin-top:14px}
+}
+@media(max-width:430px){.official-slide-caption{padding-top:12px}.official-carousel .hero-dots button{width:14px}}
